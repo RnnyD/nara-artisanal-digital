@@ -39,7 +39,7 @@ const Guardians = () => {
       case "validated":
         return "bg-emerald-500/10 text-emerald-700 border-emerald-500/20";
       case "analyzing":
-        return "bg-gold/10 text-gold-dark border-gold/20";
+        return "bg-accent/10 text-accent-foreground border-accent/20";
       case "action-required":
         return "bg-orange-500/10 text-orange-700 border-orange-500/20";
       default:
@@ -80,8 +80,8 @@ const Guardians = () => {
       {contracts.length === 0 ? (
         <Card className="border-border/50">
           <CardContent className="flex flex-col items-center justify-center py-16">
-            <div className="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mb-4">
-              <FileText className="w-8 h-8 text-gold" />
+            <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-4">
+              <FileText className="w-8 h-8 text-accent" />
             </div>
             <h3 className="font-display text-xl font-semibold text-foreground mb-2">
               Votre espace juridique est prêt
@@ -103,7 +103,7 @@ const Guardians = () => {
               <Card
                 key={contract.id}
                 className={`border-border/50 cursor-pointer transition-all duration-300 hover-lift ${
-                  selectedContract === contract.id ? "ring-2 ring-gold" : ""
+                  selectedContract === contract.id ? "ring-2 ring-accent" : ""
                 }`}
                 onClick={() => setSelectedContract(contract.id)}
               >

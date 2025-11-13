@@ -48,8 +48,8 @@ const Exclusivity = () => {
           </p>
 
           <div className="pt-8">
-            <div className="inline-flex items-center gap-3 px-6 py-3 border border-gold/30 rounded-full bg-gold/5">
-              <span className="inline-block w-2 h-2 rounded-full bg-gold animate-pulse" />
+            <div className="inline-flex items-center gap-3 px-6 py-3 border border-accent/30 rounded-full bg-accent/5">
+              <span className="inline-block w-2 h-2 rounded-full bg-accent animate-pulse" />
               <span className="text-sm font-medium text-foreground/80">Accès sur invitation uniquement</span>
             </div>
           </div>

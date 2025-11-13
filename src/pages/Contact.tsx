@@ -62,7 +62,7 @@ const Contact = () => {
                     name="name"
                     required
                     placeholder="John Doe"
-                    className="h-12 border-border/50 focus:border-gold transition-colors"
+                    className="h-12 border-border/50 focus:border-accent transition-colors"
                   />
                 </div>
 
@@ -76,7 +76,7 @@ const Contact = () => {
                     type="email"
                     required
                     placeholder="john@exemple.com"
-                    className="h-12 border-border/50 focus:border-gold transition-colors"
+                    className="h-12 border-border/50 focus:border-accent transition-colors"
                   />
                 </div>
 
@@ -90,7 +90,7 @@ const Contact = () => {
                     type="url"
                     required
                     placeholder="https://votreportfolio.com"
-                    className="h-12 border-border/50 focus:border-gold transition-colors"
+                    className="h-12 border-border/50 focus:border-accent transition-colors"
                   />
                 </div>
 
@@ -99,7 +99,7 @@ const Contact = () => {
                     Objet de la demande *
                   </Label>
                   <Select name="subject" required>
-                    <SelectTrigger className="h-12 border-border/50 focus:border-gold transition-colors">
+                    <SelectTrigger className="h-12 border-border/50 focus:border-accent transition-colors">
                       <SelectValue placeholder="Sélectionnez un objet" />
                     </SelectTrigger>
                     <SelectContent>
@@ -121,7 +121,7 @@ const Contact = () => {
                     required
                     placeholder="Parlez-nous de votre projet et de vos ambitions..."
                     rows={6}
-                    className="border-border/50 focus:border-gold transition-colors resize-none"
+                    className="border-border/50 focus:border-accent transition-colors resize-none"
                   />
                 </div>
 

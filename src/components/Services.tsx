@@ -82,19 +82,19 @@ const Services = () => {
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="mb-6">
-                <div className="inline-flex p-4 rounded-xl bg-gold/10 text-gold group-hover:bg-gold group-hover:text-navy transition-all duration-400">
+                <div className="inline-flex p-4 rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-primary transition-all duration-400">
                   <service.icon className="w-8 h-8" />
                 </div>
               </div>
               
               <h3 className="font-display text-2xl font-semibold mb-2">{service.title}</h3>
-              <p className="text-sm text-gold mb-4 font-medium">{service.subtitle}</p>
+              <p className="text-sm text-accent mb-4 font-medium">{service.subtitle}</p>
               <p className="text-foreground/70 mb-6 leading-relaxed">{service.description}</p>
               
               <ul className="space-y-3">
                 {service.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-2 text-sm text-foreground/80">
-                    <span className="inline-block w-1.5 h-1.5 rounded-full bg-gold mt-2 flex-shrink-0" />
+                    <span className="inline-block w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
                     <span>{feature}</span>
                   </li>
                 ))}
@@ -106,7 +106,7 @@ const Services = () => {
         <div className="text-center mt-16">
           <Link 
             to="/platform" 
-            className="inline-flex items-center gap-2 text-foreground/70 hover:text-gold transition-colors group"
+            className="inline-flex items-center gap-2 text-foreground/70 hover:text-accent transition-colors group"
           >
             Explorer les fonctionnalités
             <span className="inline-block transition-transform group-hover:translate-x-1">→</span>

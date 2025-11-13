@@ -76,7 +76,7 @@ const About = () => {
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <div className="mb-6">
-                    <div className="inline-flex p-4 rounded-xl bg-gold/10 text-gold group-hover:bg-gold group-hover:text-navy transition-all duration-400">
+                    <div className="inline-flex p-4 rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-primary transition-all duration-400">
                       <value.icon className="w-8 h-8" />
                     </div>
                   </div>
@@ -93,7 +93,7 @@ const About = () => {
         <section className="py-32 px-6 lg:px-12">
           <div className="container mx-auto max-w-3xl">
             <div className="text-center space-y-6">
-              <div className="inline-flex items-center gap-3 px-6 py-3 border border-gold/30 rounded-full bg-gold/5 mb-6">
+              <div className="inline-flex items-center gap-3 px-6 py-3 border border-accent/30 rounded-full bg-accent/5 mb-6">
                 <span className="text-sm font-medium text-foreground/80">Notre Mission</span>
               </div>
               

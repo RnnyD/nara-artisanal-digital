@@ -16,8 +16,8 @@ const AppSidebar = () => {
     <aside className="w-64 min-h-screen bg-muted/20 border-r border-border/50 flex flex-col">
       {/* Logo */}
       <div className="p-6 border-b border-border/50">
-        <Link to="/app" className="font-display text-2xl font-bold text-foreground">
-          NARA
+        <Link to="/app" className="flex items-center">
+          <img src="/src/assets/nara-logo.svg" alt="NARA" className="h-8" />
         </Link>
       </div>
 
@@ -32,14 +32,14 @@ const AppSidebar = () => {
               className={cn(
                 "flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 group",
                 isActive
-                  ? "bg-gold/10 text-foreground font-semibold"
+                  ? "bg-accent/10 text-foreground font-semibold"
                   : "text-foreground/70 hover:bg-muted/50 hover:text-foreground"
               )}
             >
               <item.icon
                 className={cn(
                   "w-5 h-5 transition-colors",
-                  isActive ? "text-gold" : "text-foreground/60 group-hover:text-gold"
+                  isActive ? "text-accent" : "text-foreground/60 group-hover:text-accent"
                 )}
               />
               <span className="text-sm">{item.name}</span>
@@ -54,12 +54,12 @@ const AppSidebar = () => {
           to="/app/settings"
           className="flex items-center gap-3 px-4 py-3 rounded-lg text-foreground/70 hover:bg-muted/50 hover:text-foreground transition-all duration-300 group"
         >
-          <Settings className="w-5 h-5 text-foreground/60 group-hover:text-gold transition-colors" />
+          <Settings className="w-5 h-5 text-foreground/60 group-hover:text-accent transition-colors" />
           <span className="text-sm">Paramètres</span>
         </Link>
         
         <div className="flex items-center gap-3 px-4 py-3">
-          <div className="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center text-sm font-semibold text-foreground">
+          <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center text-sm font-semibold text-foreground">
             MC
           </div>
           <div className="flex-1 min-w-0">

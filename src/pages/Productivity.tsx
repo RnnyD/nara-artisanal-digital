@@ -52,7 +52,7 @@ const Productivity = () => {
         <Card className="border-border/50">
           <CardHeader>
             <CardTitle className="text-xl font-display font-semibold flex items-center gap-2">
-              <CheckSquare className="w-5 h-5 text-gold" />
+              <CheckSquare className="w-5 h-5 text-accent" />
               À faire aujourd'hui
             </CardTitle>
           </CardHeader>
@@ -98,7 +98,7 @@ const Productivity = () => {
         <Card className="border-border/50">
           <CardHeader>
             <CardTitle className="text-xl font-display font-semibold flex items-center gap-2">
-              <Calendar className="w-5 h-5 text-gold" />
+              <Calendar className="w-5 h-5 text-accent" />
               À venir
             </CardTitle>
           </CardHeader>
@@ -110,7 +110,7 @@ const Productivity = () => {
                   index !== upcomingTasks.length - 1 ? "border-b border-border/30" : ""
                 }`}
               >
-                <div className="w-2 h-2 rounded-full bg-gold mt-2 flex-shrink-0" />
+                <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
                 <div className="flex-1">
                   <p className="text-sm font-medium text-foreground">{task.title}</p>
                   <p className="text-xs text-foreground/60 mt-1">{task.date}</p>

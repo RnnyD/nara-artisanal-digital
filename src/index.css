@@ -8,103 +8,102 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* NARA Design System - Luxe Calme */
-    --background: 46 25% 96%;
-    --foreground: 240 56% 9%;
+    /* NARA Design System - Brand Guidelines v1.0 */
+    --background: 40 22% 95%; /* Craie */
+    --foreground: 210 37% 17%; /* Bleu Crépuscule */
 
-    --card: 46 25% 96%;
-    --card-foreground: 240 56% 9%;
+    --card: 40 22% 95%;
+    --card-foreground: 210 37% 17%;
 
-    --popover: 46 25% 96%;
-    --popover-foreground: 240 56% 9%;
+    --popover: 40 22% 95%;
+    --popover-foreground: 210 37% 17%;
 
-    --primary: 240 56% 9%;
-    --primary-foreground: 46 25% 96%;
+    --primary: 210 37% 17%; /* Bleu Crépuscule */
+    --primary-foreground: 40 22% 95%; /* Craie */
 
-    --secondary: 40 39% 75%;
-    --secondary-foreground: 240 56% 9%;
+    --secondary: 29 25% 61%; /* Terre de Sienne Douce */
+    --secondary-foreground: 210 37% 17%;
 
-    --muted: 40 39% 75%;
-    --muted-foreground: 240 20% 40%;
+    --muted: 29 25% 61%;
+    --muted-foreground: 210 20% 40%;
 
-    --accent: 44 48% 80%;
-    --accent-foreground: 240 56% 9%;
+    --accent: 33 35% 78%; /* Sable Doré */
+    --accent-foreground: 210 37% 17%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 46 25% 96%;
+    --destructive-foreground: 40 22% 95%;
 
-    --border: 44 30% 88%;
-    --input: 44 30% 88%;
-    --ring: 44 48% 80%;
+    --border: 33 35% 88%;
+    --input: 33 35% 88%;
+    --ring: 33 35% 78%;
 
     --radius: 0.75rem;
 
     /* Custom tokens for NARA */
-    --gold: 44 48% 80%;
-    --gold-light: 44 58% 90%;
-    --navy: 240 56% 9%;
-    --ivory: 46 25% 96%;
-    --beige: 40 39% 75%;
+    --craie: 40 22% 95%;
+    --bleu-crepuscule: 210 37% 17%;
+    --sable-dore: 33 35% 78%;
+    --terre-sienne: 29 25% 61%;
 
     /* Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(44 58% 90%), hsl(44 48% 80%));
-    --gradient-subtle: linear-gradient(180deg, hsl(46 25% 96%), hsl(44 30% 88%));
+    --gradient-gold: linear-gradient(135deg, hsl(33 35% 82%), hsl(33 35% 78%));
+    --gradient-subtle: linear-gradient(180deg, hsl(40 22% 95%), hsl(33 35% 90%));
 
     /* Shadows */
-    --shadow-soft: 0 10px 40px -10px hsl(240 56% 9% / 0.08);
-    --shadow-glow: 0 0 60px hsl(44 48% 80% / 0.3);
+    --shadow-soft: 0 10px 40px -10px hsl(210 37% 17% / 0.08);
+    --shadow-glow: 0 0 60px hsl(33 35% 78% / 0.3);
 
     /* Animations */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-slow: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --sidebar-background: 46 25% 96%;
-    --sidebar-foreground: 240 56% 9%;
-    --sidebar-primary: 240 56% 9%;
-    --sidebar-primary-foreground: 46 25% 96%;
-    --sidebar-accent: 44 48% 80%;
-    --sidebar-accent-foreground: 240 56% 9%;
-    --sidebar-border: 44 30% 88%;
-    --sidebar-ring: 44 48% 80%;
+    --sidebar-background: 40 22% 95%;
+    --sidebar-foreground: 210 37% 17%;
+    --sidebar-primary: 210 37% 17%;
+    --sidebar-primary-foreground: 40 22% 95%;
+    --sidebar-accent: 33 35% 78%;
+    --sidebar-accent-foreground: 210 37% 17%;
+    --sidebar-border: 33 35% 88%;
+    --sidebar-ring: 33 35% 78%;
   }
 
   .dark {
-    --background: 240 56% 9%;
-    --foreground: 46 25% 96%;
+    --background: 210 37% 17%; /* Bleu Crépuscule */
+    --foreground: 40 22% 95%; /* Craie */
 
-    --card: 240 50% 12%;
-    --card-foreground: 46 25% 96%;
+    --card: 210 35% 20%;
+    --card-foreground: 40 22% 95%;
 
-    --popover: 240 50% 12%;
-    --popover-foreground: 46 25% 96%;
+    --popover: 210 35% 20%;
+    --popover-foreground: 40 22% 95%;
 
-    --primary: 46 25% 96%;
-    --primary-foreground: 240 56% 9%;
+    --primary: 40 22% 95%; /* Craie */
+    --primary-foreground: 210 37% 17%; /* Bleu Crépuscule */
 
-    --secondary: 240 30% 20%;
-    --secondary-foreground: 46 25% 96%;
+    --secondary: 210 30% 25%;
+    --secondary-foreground: 40 22% 95%;
 
-    --muted: 240 30% 20%;
-    --muted-foreground: 44 20% 70%;
+    --muted: 210 30% 25%;
+    --muted-foreground: 33 20% 70%;
 
-    --accent: 44 48% 80%;
-    --accent-foreground: 240 56% 9%;
+    --accent: 33 35% 78%; /* Sable Doré */
+    --accent-foreground: 210 37% 17%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 46 25% 96%;
+    --destructive-foreground: 40 22% 95%;
 
-    --border: 240 30% 20%;
-    --input: 240 30% 20%;
-    --ring: 44 48% 80%;
+    --border: 210 30% 25%;
+    --input: 210 30% 25%;
+    --ring: 33 35% 78%;
 
-    --sidebar-background: 240 56% 9%;
-    --sidebar-foreground: 46 25% 96%;
-    --sidebar-primary: 44 48% 80%;
-    --sidebar-primary-foreground: 240 56% 9%;
-    --sidebar-accent: 240 30% 20%;
-    --sidebar-accent-foreground: 46 25% 96%;
-    --sidebar-border: 240 30% 20%;
-    --sidebar-ring: 44 48% 80%;
+    --sidebar-background: 210 37% 17%;
+    --sidebar-foreground: 40 22% 95%;
+    --sidebar-primary: 33 35% 78%;
+    --sidebar-primary-foreground: 210 37% 17%;
+    --sidebar-accent: 210 30% 25%;
+    --sidebar-accent-foreground: 40 22% 95%;
+    --sidebar-border: 210 30% 25%;
+    --sidebar-ring: 33 35% 78%;
   }
 }
 
@@ -119,9 +118,9 @@ All colors MUST be HSL.
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
   }
 
   /* Smooth scroll */

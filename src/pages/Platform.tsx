@@ -105,7 +105,7 @@ const Platform = () => {
           >
             <div className="container mx-auto max-w-6xl">
               <div className="mb-12 animate-fade-in-up">
-                <div className="inline-flex p-4 rounded-xl bg-gold/10 text-gold mb-6">
+                <div className="inline-flex p-4 rounded-xl bg-accent/10 text-accent mb-6">
                   <module.icon className="w-10 h-10" />
                 </div>
                 
@@ -113,7 +113,7 @@ const Platform = () => {
                   {module.name}
                 </h2>
                 
-                <p className="text-lg text-gold font-medium mb-4">{module.tagline}</p>
+                <p className="text-lg text-accent font-medium mb-4">{module.tagline}</p>
                 <p className="text-xl text-foreground/70 max-w-3xl leading-relaxed">{module.description}</p>
               </div>
 
@@ -125,7 +125,7 @@ const Platform = () => {
                     style={{ animationDelay: `${featureIndex * 100}ms` }}
                   >
                     <div className="mb-4">
-                      <div className="inline-flex p-3 rounded-lg bg-gold/10 text-gold">
+                      <div className="inline-flex p-3 rounded-lg bg-accent/10 text-accent">
                         <feature.icon className="w-6 h-6" />
                       </div>
                     </div>
@@ -142,9 +142,9 @@ const Platform = () => {
         {/* CTA Section */}
         <section className="py-32 px-6 lg:px-12">
           <div className="container mx-auto max-w-3xl text-center">
-            <div className="space-y-8 bg-gradient-to-br from-gold/5 to-gold/10 border border-gold/20 rounded-3xl p-12">
-              <div className="inline-flex items-center gap-3 px-6 py-3 border border-gold/30 rounded-full bg-background/50">
-                <span className="inline-block w-2 h-2 rounded-full bg-gold animate-pulse" />
+            <div className="space-y-8 bg-gradient-to-br from-accent/5 to-accent/10 border border-accent/20 rounded-3xl p-12">
+              <div className="inline-flex items-center gap-3 px-6 py-3 border border-accent/30 rounded-full bg-background/50">
+                <span className="inline-block w-2 h-2 rounded-full bg-accent animate-pulse" />
                 <span className="text-sm font-medium text-foreground/80">Accès Exclusif</span>
               </div>
               

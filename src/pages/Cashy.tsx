@@ -82,7 +82,7 @@ const Cashy = () => {
             <CardTitle className="text-sm font-medium text-foreground/70">
               Chiffre d'affaires (30j)
             </CardTitle>
-            <TrendingUp className="h-4 w-4 text-gold" />
+            <TrendingUp className="h-4 w-4 text-accent" />
           </CardHeader>
           <CardContent>
             <div className="text-3xl font-display font-semibold text-foreground">11 500 €</div>
@@ -95,7 +95,7 @@ const Cashy = () => {
             <CardTitle className="text-sm font-medium text-foreground/70">
               En attente de paiement
             </CardTitle>
-            <Clock className="h-4 w-4 text-gold" />
+            <Clock className="h-4 w-4 text-accent" />
           </CardHeader>
           <CardContent>
             <div className="text-3xl font-display font-semibold text-foreground">8 000 €</div>
@@ -108,7 +108,7 @@ const Cashy = () => {
             <CardTitle className="text-sm font-medium text-foreground/70">
               Prévision URSSAF
             </CardTitle>
-            <DollarSign className="h-4 w-4 text-gold" />
+            <DollarSign className="h-4 w-4 text-accent" />
           </CardHeader>
           <CardContent>
             <div className="text-3xl font-display font-semibold text-foreground">2 530 €</div>
@@ -130,7 +130,7 @@ const Cashy = () => {
               (value, index) => (
                 <div key={index} className="flex-1 flex flex-col items-center gap-2">
                   <div
-                    className="w-full bg-gold/20 rounded-t-md relative group transition-all duration-300 hover:bg-gold/30"
+                    className="w-full bg-accent/20 rounded-t-md relative group transition-all duration-300 hover:bg-accent/30"
                     style={{ height: `${(value / 7500) * 100}%` }}
                   >
                     <div className="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity text-xs font-semibold text-foreground whitespace-nowrap">
@@ -161,8 +161,8 @@ const Cashy = () => {
                   }`}
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center">
-                      <FileText className="w-5 h-5 text-gold" />
+                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+                      <FileText className="w-5 h-5 text-accent" />
                     </div>
                     <div>
                       <p className="font-semibold text-foreground">Facture #{invoice.id}</p>

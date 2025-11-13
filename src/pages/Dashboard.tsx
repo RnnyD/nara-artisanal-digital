@@ -23,7 +23,7 @@ const Dashboard = () => {
             <CardTitle className="text-sm font-medium text-foreground/70">
               Contrats en attente
             </CardTitle>
-            <FileText className="h-4 w-4 text-gold" />
+            <FileText className="h-4 w-4 text-accent" />
           </CardHeader>
           <CardContent>
             <div className="text-3xl font-display font-semibold text-foreground">1</div>
@@ -38,7 +38,7 @@ const Dashboard = () => {
             <CardTitle className="text-sm font-medium text-foreground/70">
               Factures en attente
             </CardTitle>
-            <DollarSign className="h-4 w-4 text-gold" />
+            <DollarSign className="h-4 w-4 text-accent" />
           </CardHeader>
           <CardContent>
             <div className="text-3xl font-display font-semibold text-foreground">2</div>
@@ -53,7 +53,7 @@ const Dashboard = () => {
             <CardTitle className="text-sm font-medium text-foreground/70">
               Tâches aujourd'hui
             </CardTitle>
-            <CheckSquare className="h-4 w-4 text-gold" />
+            <CheckSquare className="h-4 w-4 text-accent" />
           </CardHeader>
           <CardContent>
             <div className="text-3xl font-display font-semibold text-foreground">3</div>
@@ -126,7 +126,7 @@ const Dashboard = () => {
           <CardContent className="pt-6">
             <div className="space-y-4">
               <div className="flex items-start gap-4 pb-4 border-b border-border/30">
-                <div className="w-2 h-2 rounded-full bg-gold mt-2" />
+                <div className="w-2 h-2 rounded-full bg-accent mt-2" />
                 <div className="flex-1">
                   <p className="text-sm font-medium text-foreground">
                     Contrat "Projet X" soumis pour analyse

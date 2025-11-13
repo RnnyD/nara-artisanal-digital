@@ -22,8 +22,8 @@ const Navigation = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="font-display text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity">
-            NARA
+          <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
+            <img src="/src/assets/nara-logo.svg" alt="NARA" className="h-8" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -33,13 +33,13 @@ const Navigation = () => {
                 key={link.path}
                 to={link.path}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-gold relative py-2",
+                  "text-sm font-medium transition-colors hover:text-accent relative py-2",
                   isActive(link.path) ? "text-foreground" : "text-foreground/70"
                 )}
               >
                 {link.name}
                 {isActive(link.path) && (
-                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-gold rounded-full" />
+                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-accent rounded-full" />
                 )}
               </Link>
             ))}
