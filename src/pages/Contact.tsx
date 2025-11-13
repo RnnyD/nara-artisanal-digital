@@ -7,10 +7,12 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { useScrollFade } from "@/hooks/use-scroll-fade";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
+  const { ref, isVisible } = useScrollFade(0.2);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -34,9 +36,15 @@ const Contact = () => {
       
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-32 px-6 lg:px-12">
+        <section ref={ref} className="py-32 px-6 lg:px-12">
           <div className="container mx-auto max-w-3xl text-center">
-            <div className="space-y-6 animate-fade-in-up">
+            <div 
+              className={`space-y-6 transition-all duration-1000 ${
+                isVisible 
+                  ? 'opacity-100 translate-y-0' 
+                  : 'opacity-0 translate-y-8'
+              }`}
+            >
               <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
                 Prêt(e) à entrer dans l'univers NARA ?
               </h1>

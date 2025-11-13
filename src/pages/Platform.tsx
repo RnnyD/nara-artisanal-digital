@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Shield, DollarSign, Zap, FileText, Bell, PieChart, Calendar, Users, CheckCircle } from "lucide-react";
+import { useScrollFade } from "@/hooks/use-scroll-fade";
 
 const modules = [
   {
@@ -77,15 +78,23 @@ const modules = [
 ];
 
 const Platform = () => {
+  const { ref, isVisible } = useScrollFade(0.2);
+
   return (
     <div className="min-h-screen">
       <Navigation />
       
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-32 px-6 lg:px-12">
+        <section ref={ref} className="py-32 px-6 lg:px-12">
           <div className="container mx-auto max-w-4xl text-center">
-            <div className="space-y-8 animate-fade-in-up">
+            <div 
+              className={`space-y-8 transition-all duration-1000 ${
+                isVisible 
+                  ? 'opacity-100 translate-y-0' 
+                  : 'opacity-0 translate-y-8'
+              }`}
+            >
               <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
                 La Plateforme NARA
               </h1>

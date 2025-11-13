@@ -2,6 +2,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Heart, TrendingUp, Sparkles, Users } from "lucide-react";
 import textureMarble from "@/assets/texture-marble.jpg";
+import { useScrollFade } from "@/hooks/use-scroll-fade";
+import { useParallax } from "@/hooks/use-parallax";
 
 const values = [
   {
@@ -27,24 +29,34 @@ const values = [
 ];
 
 const About = () => {
+  const { ref, isVisible } = useScrollFade(0.2);
+  const parallaxOffset = useParallax(0.2);
+
   return (
     <div className="min-h-screen">
       <Navigation />
       
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="relative py-32 px-6 lg:px-12 overflow-hidden">
+        <section ref={ref} className="relative py-32 px-6 lg:px-12 overflow-hidden">
           <div 
-            className="absolute inset-0 opacity-5"
+            className="absolute inset-0 opacity-5 transition-transform duration-100"
             style={{ 
               backgroundImage: `url(${textureMarble})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
+              transform: `translateY(${parallaxOffset}px)`,
             }}
           />
           
           <div className="container mx-auto max-w-4xl relative z-10">
-            <div className="text-center space-y-8 animate-fade-in-up">
+            <div 
+              className={`text-center space-y-8 transition-all duration-1000 ${
+                isVisible 
+                  ? 'opacity-100 translate-y-0' 
+                  : 'opacity-0 translate-y-8'
+              }`}
+            >
               <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
                 Notre Vision
               </h1>
